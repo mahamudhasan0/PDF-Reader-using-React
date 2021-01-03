@@ -1,0 +1,107 @@
+.main{
+  margin: 10px;
+}
+.document{
+  width: 350px;
+  height: 400px;
+}
+.main{
+  display: flex;
+  justify-content: center;
+}
+.btn{
+  padding: 8px;
+  background-color: brown;
+}
+.pdf-info{
+  display: flex;
+  margin-left: 5px;
+  justify-content: center;
+  width: min-content;
+  height: min-content;
+  background-color: #dca602;
+  color: black;
+  box-sizing: border-box;
+  padding: 5px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+}
+.pages{
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  width: min-content;
+  height: min-content;
+  background-color: #dca602;
+  color: black;
+  box-sizing: border-box;
+  padding: 5px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+}
+/* Hide During Scroll */
+.sticky {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 0px;
+  background-color: pink;
+  width: 20vw;
+  min-height: 10vw;
+  font-weight: 900;
+  font-size: 2vw;
+}
+
+.hideDuring {
+  position: fixed;
+  right: 0;
+  bottom: 85vh;
+}
+
+
+
+
+/* Custom Input Field */
+.custom-file-input {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  color: #533e00;
+}
+.custom-file-input input {
+  visibility: hidden;
+  width: 100px;
+}
+.custom-file-input:before {
+  content: 'Choose File';
+  display: block;
+  background: -webkit-linear-gradient( -180deg, #ffdc73, #febf01);
+		background: -o-linear-gradient( -180deg, #ffdc73, #febf01);
+		background: -moz-linear-gradient( -180deg, #ffdc73, #febf01);
+		background: linear-gradient( -180deg, #ffdc73, #febf01);
+		border: 3px solid #dca602;
+		border-radius: 10px;
+		padding: 5px 0px;
+		outline: none;
+		white-space: nowrap;
+		cursor: pointer;
+		text-shadow: 1px 1px rgba(255,255,255,0.7);
+		font-weight: bold;
+		text-align: center;
+		font-size: 10pt;
+    position: absolute;
+    left: 0;
+		right: 0;
+	}
+	.custom-file-input:hover:before {
+		border-color: #febf01;
+	}
+		.custom-file-input:active:before {
+		background: #febf01;
+	}
